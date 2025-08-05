@@ -1,0 +1,58 @@
+.headsearch{
+   
+       
+}
+.text-center{
+    display:flex;
+    gap:26px;
+    margin:15px;
+    border: 1px solid black;
+    width: fit-content;
+    padding:17px;
+    border-radius:40px;
+    
+    
+    
+}
+input{
+    
+}
+
+.py-4{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    
+
+    .py-4{
+    display: grid;
+}
+#getget{
+    display: none;
+}
+#yesyes{
+    display:none;
+}
+#gridgrid{
+    display:none;
+}
+#abouttt{
+ display: flex;
+ padding: 0;
+ margin:0 120px;
+}
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1024px){}
