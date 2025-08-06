@@ -80,7 +80,11 @@ input{
  
 }
 #abouttt{
-    display: flex;
+  display: flex;
+  width:10px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space:nowrap;
    
 }
 .picture-grid img {
