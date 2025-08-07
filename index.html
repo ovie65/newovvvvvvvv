@@ -440,9 +440,100 @@
     
 
 
+  <!-- Interactive Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-sections">
+        
+        <!-- Travel Section -->
+        <div class="footer-section">
+          <div class="footer-header" onclick="toggleSection('travel')">
+            <h3>Travel</h3>
+            <i class="fas fa-chevron-down" id="travel-icon"></i>
+          </div>
+          <div class="footer-content" id="travel-content">
+            <ul>
+              <li><a href="#">Cabin(USA) </a></li>
+              <li><a href="#">Treehouses(USA) </a></li>
+              <li><a href="#">Tiny Houses(USA) </a></li>
+              <li><a href="#">Beach Houses(USA) </a></li>
+              <li><a href="#">Farm Cottages(UNITED KINGDOM) </a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Home Section -->
+        <div class="footer-section">
+          <div class="footer-header" onclick="toggleSection('home')">
+            <h3>Home</h3>
+            <i class="fas fa-chevron-down" id="home-icon"></i>
+          </div>
+          <div class="footer-content" id="home-content">
+            <ul>
+              <li><a href="#">Property listings</a></li>
+              <li><a href="#">Home services</a></li>
+              <li><a href="#">Interior design</a></li>
+              <li><a href="#">Home maintenance</a></li>
+              <li><a href="#">Neighborhood guides</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Airbnb Section -->
+        <div class="footer-section">
+          <div class="footer-header" onclick="toggleSection('airbnb')">
+            <h3>Airbnb</h3>
+            <i class="fas fa-chevron-down" id="airbnb-icon"></i>
+          </div>
+          <div class="footer-content" id="airbnb-content">
+            <ul>
+              <li><a href="#">Host your home</a></li>
+              <li><a href="#">Experiences</a></li>
+              <li><a href="#">Airbnb Plus</a></li>
+              <li><a href="#">Luxury stays</a></li>
+              <li><a href="#">Business travel</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom">
+        
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSection(section) {
+      const content = document.getElementById(section + '-content');
+      const icon = document.getElementById(section + '-icon');
+      
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        // Close all other sections
+        const allContents = document.querySelectorAll('.footer-content');
+        const allIcons = document.querySelectorAll('.footer-header i');
+        
+        allContents.forEach(c => c.style.display = 'none');
+        allIcons.forEach(i => i.style.transform = 'rotate(0deg)');
+        
+        // Open clicked section
+        content.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Initialize - close all sections by default
+    document.addEventListener('DOMContentLoaded', function() {
+      const allContents = document.querySelectorAll('.footer-content');
+      allContents.forEach(c => c.style.display = 'none');
+    });
+  </script>
+
 </body>
-  
-  
-</div>
 </html>
  
