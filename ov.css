@@ -35,7 +35,7 @@ input{
       }
     
       .picture-grid::-webkit-scrollbar-thumb {
-        background-color: #404041; /* Color of the scrollbar thumb */
+         /* Color of the scrollbar thumb */
         border-radius: 4px;     /* Rounded corners */
       }
     
