@@ -43,14 +43,47 @@ input{
         background-color: #f1f1f1; /* Color of the scrollbar track */
       }
     
-      .picture-grid img {
+      .card {
+        flex: 0 0 auto;  /* Prevent shrinking */
+        width: 15%;     /* Adjust based on design */
+        height: 150px;   /* Example height */
+        
+      }
+
+
+      .picture-grid2 {
+        display: flex;
+        overflow-x: scroll; /* Enables horizontal scrolling */
+        gap: 10px;
+        scroll-behavior: smooth; /* Smooth scrolling effect */
+      }
+    
+      .picture-grid2::-webkit-scrollbar {
+        height: 8px; /* Height of the horizontal scrollbar */
+      }
+    
+      .picture-grid2::-webkit-scrollbar-thumb {
+        background-color: #404041; /* Color of the scrollbar thumb */
+        border-radius: 4px;     /* Rounded corners */
+      }
+    
+      .picture-grid2::-webkit-scrollbar-track {
+        background-color: #f1f1f1; /* Color of the scrollbar track */
+      }
+    
+      .card {
         flex: 0 0 auto;  /* Prevent shrinking */
         width: 15%;     /* Adjust based on design */
         height: 150px;   /* Example height */
         
       }
     
-
+.no-gap{
+  margin:0px;
+}
+section{
+  margin:3  0px;
+}
 
 
 
@@ -88,11 +121,13 @@ input{
    
 }
 .picture-grid img {
-        flex: 0 0 auto;  /* Prevent shrinking */
-        width: 30%;     /* Adjust based on design */
-        height: 150px;   /* Example height */
+        flex: 0 0 auto;  /* (Prevent shrinking */
+        width: 100%;     /* Adjust based on design */
+        height: 150px;   /* Example height!!!!!!!!!) */
         
       }
+
+      
 }
 
 
